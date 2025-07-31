@@ -1,0 +1,183 @@
+.patients-section {
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  width: 320px;
+  height: 1054px;
+  display: flex;
+  flex-direction: column;
+  font: normal normal bold 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  opacity: 1;
+}
+
+.patients-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.header-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.patients-header h3 {
+  font: normal normal 800 24px/32px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  opacity: 1;
+  margin: 0;
+}
+
+.patient-count {
+  font: normal normal bold 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #707070;
+  opacity: 1;
+}
+
+.search-icon img {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s;
+}
+
+.search-icon:hover {
+  background: #f1f5f9;
+}
+
+.ellipsis-icon img {
+  width: 16px;
+  height: 4px;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s;
+  flex-shrink: 0;
+}
+
+.ellipsis-icon:hover {
+  background: #f1f5f9;
+}
+
+.patients-list {
+  flex: 1;
+  padding: 0.5rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Custom scrollbar styling */
+.patients-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.patients-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+.patients-list::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 4px;
+}
+
+.patients-list::-webkit-scrollbar-thumb:hover {
+  background: #333333;
+}
+
+/* Firefox scrollbar */
+.patients-list {
+  scrollbar-width: thin;
+  scrollbar-color: #000000 #f1f1f1;
+}
+
+.patient-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-bottom: 0.25rem;
+}
+
+.patient-item:hover {
+  background: #f8fafc;
+}
+
+.patient-item.active {
+  background: #D8FCF7 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+
+.patient-avatar {
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #10b981;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 0.875rem;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.patient-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.loading-message,
+.error-message {
+  text-align: center;
+  padding: 1rem;
+  font: normal normal bold 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  opacity: 1;
+}
+
+.error-message {
+  color: #ef4444;
+}
+
+.patient-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.patient-name {
+  font: normal normal bold 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  opacity: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.patient-details {
+  font: normal normal bold 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #707070;
+  opacity: 1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+} 
+
+ 

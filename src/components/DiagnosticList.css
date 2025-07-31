@@ -1,0 +1,126 @@
+.diagnostic-list-section {
+  background: white;
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+}
+
+.diagnostic-list-section h3 {
+  font: normal normal 800 24px/33px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  opacity: 1;
+  margin-bottom: 1rem;
+}
+
+.diagnostic-table {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #000000 #f1f5f9;
+}
+
+.diagnostic-table::-webkit-scrollbar {
+  width: 6px;
+}
+
+.diagnostic-table::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.diagnostic-table::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 3px;
+}
+
+.diagnostic-table::-webkit-scrollbar-thumb:hover {
+  background: #333333;
+}
+
+.diagnostic-table table {
+  width: 100%;
+  border-collapse: collapse;
+  height: 100%;
+}
+
+.diagnostic-table th {
+  background: #F6F7F8;
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+  color: #1e293b;
+  font-size: 0.875rem;
+  font-family: Manrope, sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-radius: 24px;
+}
+
+.diagnostic-table td {
+  padding: 1rem;
+  font-size: 0.875rem;
+  color: #072635;
+  font-family: Manrope, sans-serif;
+  vertical-align: top;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+
+.diagnostic-table tr:last-child td {
+  border-bottom: none;
+}
+
+.status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  white-space: normal;
+  word-wrap: break-word;
+  word-break: break-word;
+  max-width: 150px;
+  min-width: 80px;
+  text-align: center;
+  line-height: 1.2;
+  display: inline-block;
+  overflow-wrap: break-word;
+}
+
+.status.under-observation {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.status.cured {
+  background: #f0fdf4;
+  color: #10b981;
+}
+
+.status.inactive {
+  background: #f1f5f9;
+  color: #64748b;
+}
+
+.status.managed {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+.status.actively-treated {
+  background: #fef3c7;
+  color: #d97706;
+}
+
+.status.untreated {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+.status.default {
+  background: #f1f5f9;
+  color: #64748b;
+} 

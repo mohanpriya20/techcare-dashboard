@@ -1,0 +1,89 @@
+.lab-results-section {
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.lab-results-section h3 {
+  margin-bottom: 1rem;
+  font: normal normal 800 24px/33px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  opacity: 1;
+}
+
+.lab-list {
+  flex: 1;
+  background: white;
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #000000 #f1f5f9;
+}
+
+.lab-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #f1f5f9;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.lab-item span {
+  font: normal normal normal 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.lab-item:hover {
+  background: #f8fafc;
+}
+
+.lab-item:last-child {
+  border-bottom: none;
+}
+
+.download-icon {
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+  padding: 0.25rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s;
+  object-fit: contain;
+  opacity: 0.8;
+}
+
+.download-icon:hover {
+  background: #f0fdf4;
+  opacity: 1;
+}
+
+/* Webkit scrollbar */
+.lab-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.lab-list::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+.lab-list::-webkit-scrollbar-thumb {
+  background: #000000;
+  border-radius: 3px;
+}
+
+.lab-list::-webkit-scrollbar-thumb:hover {
+  background: #333333;
+} 

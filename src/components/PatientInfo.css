@@ -1,0 +1,118 @@
+.patient-info-section {
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: 1px solid #e2e8f0;
+  padding: 1.5rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.patient-profile {
+  text-align: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-avatar {
+  width: 150px;
+  height: 150px;
+  background: #606664;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin: 0 auto 1rem;
+  overflow: hidden;
+}
+
+.profile-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-name {
+  font: normal normal 800 24px/33px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  margin-bottom: 1.5rem;
+}
+
+.profile-details {
+  text-align: left;
+  margin-bottom: 1.5rem;
+  flex: 1;
+}
+
+.detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+  font-family: Manrope, sans-serif;
+}
+
+.detail-item:last-child {
+  border-bottom: none;
+}
+
+.detail-icon {
+  width: 42px;
+  height: 42px;
+  background: #f1f5f9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.detail-icon img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+}
+
+.detail-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.detail-label {
+  font: normal normal medium 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+}
+
+.detail-value {
+  font: normal normal bold 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  text-transform: capitalize;
+}
+
+.show-all-btn {
+  width: 100%;
+  padding: 0.75rem;
+  border: none;
+  cursor: pointer;
+  margin-top: auto;
+  background: #01F0D0 0% 0% no-repeat padding-box;
+  border-radius: 41px;
+  font: normal normal bold 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  opacity: 1;
+}
+
+.show-all-btn:hover {
+  background: #00dec1;
+} 

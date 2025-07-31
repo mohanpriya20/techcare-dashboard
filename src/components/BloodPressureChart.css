@@ -1,0 +1,181 @@
+.chart-section {
+  margin-bottom: 1rem;
+}
+
+.chart-container {
+  width: 726px;
+  height: 330px;
+  background: #F4F0FE 0% 0% no-repeat padding-box;
+  border-radius: 12px;
+  opacity: 1;
+  display: flex;
+  position: relative;
+}
+
+.chart-wrapper::before {
+  content: "Blood Pressure";
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  font: normal normal bold 18px/24px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  text-transform: capitalize;
+  opacity: 1;
+  z-index: 10;
+}
+
+.chart-wrapper::after {
+  content: "Last 6 months ▼";
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  font: normal normal normal 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  opacity: 1;
+  z-index: 10;
+}
+.chart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.chart-header h2 {
+  font: normal normal bold 18px/24px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  text-transform: capitalize;
+  opacity: 1;
+}
+
+.time-filter {
+  padding: 0.5rem 1rem;
+  border: none;
+  background: white;
+  font: normal normal normal 14px/19px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  opacity: 1;
+  cursor: pointer;
+  text-align: right;
+}
+
+.chart-wrapper {
+  width: 75%;
+  padding: 1.5rem;
+  height: 298px;
+  position: relative;
+}
+
+.bp-summary-section {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.bp-summary-card {
+  padding: 1.5rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.bp-summary-card.systolic {
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 1.5rem;
+}
+
+.bp-summary-card.diastolic {
+  padding-top: 1.5rem;
+}
+
+.bp-summary-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0;
+}
+
+.bp-summary-icon {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.bp-summary-icon.systolic {
+  background: #E66FD2;
+}
+
+.bp-summary-icon.diastolic {
+  background: #8C6FE6;
+}
+
+.bp-summary-label {
+  font: normal normal bold 14px/19px Manrope;
+  color: #072635;
+}
+
+.bp-summary-value {
+  font: normal normal bold 24px/32px Manrope;
+  color: #072635;
+  margin-bottom: 0;
+}
+
+.bp-summary-status {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font: normal normal normal 12px/16px Manrope;
+  color: #072635;
+}
+
+.bp-status-icon {
+  font-size: 10px;
+}
+
+.chart-legend {
+  padding: 1rem 1.5rem;
+  background: #f8fafc;
+  border-top: 1px solid #e2e8f0;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.legend-item:last-child {
+  margin-bottom: 0;
+}
+
+.legend-color {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+}
+
+.legend-color.systolic {
+  background: #ec4899;
+}
+
+.legend-color.diastolic {
+  background: #3b82f6;
+}
+
+.legend-label {
+  font-size: 0.875rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.legend-icon {
+  font-size: 0.75rem;
+  color: #64748b;
+} 

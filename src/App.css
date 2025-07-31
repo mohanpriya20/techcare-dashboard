@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 1600px;
+  max-height: 1195px;
+}
+
+body {
+  /* Layout Properties */
+  top: 0px;
+  left: 0px;
+  position: relative;
+  max-width: 1600px;
+  max-height: 1195px;
+  opacity: 1;
+  background: #F6F7F8;
+  overflow: hidden;
+}
+
+.app {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  min-height: 100vh;
+  max-width: 1600px;
+  max-height: 1195px;
+  opacity: 1;
+  background: #F6F7F8;
+}
+
+.loading {
+  text-align: center;
+  padding: 2rem;
+  color: #64748b;
+  font-size: 1rem;
+}

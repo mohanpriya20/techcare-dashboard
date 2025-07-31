@@ -1,0 +1,38 @@
+.diagnosis-history-section {
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 16px;
+  opacity: 1;
+  width: 766px;
+  height: 673px;
+  display: flex;
+  flex-direction: column;
+}
+
+.diagnosis-history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem;
+}
+
+.diagnosis-history-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.diagnosis-history-header h3 {
+  font: normal normal 800 24px/32px Manrope;
+  letter-spacing: 0px;
+  color: #072635;
+  opacity: 1;
+  margin: 0;
+}
+
+.diagnosis-history-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  height: 100%;
+  padding: 0 1.5rem 1.5rem;
+}
